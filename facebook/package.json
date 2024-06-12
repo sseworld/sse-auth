@@ -1,0 +1,19 @@
+{
+  "name": "@sse-auth/facebook",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sseworld/sse-auth.git"
+  },
+  "author": "SSE World",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sseworld/sse-auth/issues"
+  },
+  "homepage": "https://github.com/sseworld/sse-auth#readme",
+  "description": ""
+}

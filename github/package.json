@@ -1,0 +1,24 @@
+{
+  "name": "@sse-auth/github",
+  "version": "1.0.0",
+  "description": "A React Component for GitHub Login",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sseworld/sse-auth.git"
+  },
+  "author": "SSE World",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sseworld/sse-auth/issues"
+  },
+  "homepage": "https://github.com/sseworld/sse-auth#readme",
+  "dependencies": {
+    "@types/node": "^20.14.2",
+    "webpack": "^5.92.0",
+    "webpack-dev-server": "^5.0.4"
+  }
+}
