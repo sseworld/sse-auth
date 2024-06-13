@@ -1,10 +1,10 @@
-import React, { Component } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 
 import PopupWindow from "./PopupWindow";
 import { toQuery } from "./utils";
 
-class GitHubLogin extends Component {
+class GitHubLogin extends React.Component {
   static propTypes = {
     buttonText: PropTypes.string,
     children: PropTypes.node,
