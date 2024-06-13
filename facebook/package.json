@@ -26,8 +26,6 @@
     "react-facebook-login"
   ],
   "devDependencies": {
-    "react": "^15.1.0",
-    "react-dom": "^15.1.0",
     "autoprefixer": "^6.0.3",
     "babel": "^6.5.2",
     "babel-core": "^6.6.5",
@@ -40,9 +38,13 @@
     "eslint": "^1.10.3",
     "eslint-config-airbnb": "^2.0.0",
     "eslint-plugin-react": "^3.11.3",
+    "node-sass": "^3.13.1",
     "postcss-loader": "^0.6.0",
+    "react": "^15.1.0",
     "react-addons-test-utils": "^15.1.0",
     "react-css-modules": "^3.5.0",
+    "react-dom": "^15.1.0",
+    "sass-loader": "^3.0.0",
     "style-loader": "0.12.x",
     "webpack": "1.12.x",
     "webpack-dev-server": "1.12.x"
