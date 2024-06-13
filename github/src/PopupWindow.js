@@ -1,4 +1,4 @@
-import { toParams, toQuery } from './utils';
+import { toParams, toQuery } from "./utils";
 
 class PopupWindow {
   constructor(id, url, options = {}) {
@@ -10,7 +10,7 @@ class PopupWindow {
   open() {
     const { url, id, options } = this;
 
-    this.window = window.open(url, id, toQuery(options, ','));
+    this.window = window.open(url, id, toQuery(options, ","));
   }
 
   close() {
@@ -27,16 +27,19 @@ class PopupWindow {
           if (!popup || popup.closed !== false) {
             this.close();
 
-            reject(new Error('The popup was closed'));
+            reject(new Error("The popup was closed"));
 
             return;
           }
 
-          if (popup.location.href === this.url || popup.location.pathname === 'blank') {
+          if (
+            popup.location.href === this.url ||
+            popup.location.pathname === "blank"
+          ) {
             return;
           }
 
-          const params = toParams(popup.location.search.replace(/^\?/, ''));
+          const params = toParams(popup.location.search.replace(/^\?/, ""));
 
           resolve(params);
 
