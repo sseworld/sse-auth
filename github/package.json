@@ -1,8 +1,15 @@
 {
   "name": "@sse-auth/github",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A React Component for GitHub Login",
-  "main": "index.js",
+  "main": "dist/GitHubLogin.js",
+  "keywords": [
+    "react",
+    "reactjs",
+    "react-component",
+    "github-login",
+    "react-github-login"
+  ],
   "scripts": {
     "build": "NODE_ENV=production webpack -p --config webpack.config.dist.js",
     "start": "NODE_ENV=development webpack-dev-server --config webpack.config.js",
