@@ -1,6 +1,6 @@
 {
   "name": "@sse-auth/microsoft",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React component for easy OAuth with Microsoft services on client side.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

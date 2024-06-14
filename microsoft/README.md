@@ -95,4 +95,4 @@ export default ExamplePage;
 
 ## 📝 License
 
-[MIT](https://github.com/sseworld/sse-auth/tree/master/microsoftmcrosof/LICENSE)
+[MIT](https://github.com/sseworld/sse-auth/blob/master/microsoft/LICENSE)
