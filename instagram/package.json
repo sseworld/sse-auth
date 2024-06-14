@@ -4,14 +4,7 @@
   "description": "An Instagram Login Component for React",
   "main": "dist/instagram-login.js",
   "scripts": {
-    "start": "set NODE_ENV=development&& webpack-dev-server --config webpack/webpack.config.dev.js",
-    "dev": "npm run start",
-    "bundle": "rollup -c rollup.config.mjs",
-    "test": "mocha js:babel-core/register --require ./test/test_helper.js --recursive ./test",
-    "test:watch": "npm run test --watch",
-    "lint": "eslint ./src",
-    "lint:fix": "eslint ./src --fix",
-    "clean": "rm -rf node_modules dist; rm package-lock.json"
+    "bundle": "rollup -c rollup.config.mjs"
   },
   "pre-commit": [
     "test",
@@ -54,8 +47,7 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-fontawesome": "^1.7.1",
-    "rollup": "^4.18.0",
-    "rollup-plugin-analyzer": "^4.0.0"
+    "rollup": "^4.18.0"
   },
   "babel": {
     "presets": [
