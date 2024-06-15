@@ -1,0 +1,107 @@
+{
+    "name": "@sse-auth/discord",
+    "version": "1.0.0",
+    "description": "A React component for easy integration of 'Sign in with Discord' functionality into web applications",
+    "main": "dist/index.js",
+    "keywords": [
+        "react",
+        "discord",
+        "authentication",
+        "oauth2",
+        "login",
+        "sse",
+        "sseworld",
+        "sse-auth"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/sseworld/sse-auth.git"
+    },
+    "author": "SSE World",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/sseworld/sse-auth/issues"
+    },
+    "homepage": "https://github.com/sseworld/sse-auth#readme",
+    "files": [
+        "dist",
+        "LICENSE",
+        "README.md"
+    ],
+    "scripts": {
+        "prebuild": "rimraf dist",
+        "build": "tsc",
+        "prepublishOnly": "npm run build",
+        "lint": "eslint . --cache",
+        "lint:fix": "eslint . --cache --fix"
+    },
+    "devDependencies": {
+        "@types/react": "^18.3.3",
+        "@types/web": "^0.0.149",
+        "bun-types": "^1.1.13",
+        "eslint": "^8.57.0",
+        "eslint-config-universe": "^13.0.0",
+        "eslint-plugin-md": "^1.0.19",
+        "lint-staged": "^15.2.7",
+        "prettier": "^3.3.2",
+        "rimraf": "^5.0.7",
+        "tslib": "^2.6.3"
+    },
+    "peerDependencies": {
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "typescript": "^5.0.0"
+    },
+    "eslintConfig": {
+        "root": true,
+        "ignorePatterns": [
+            "**/dist/**"
+        ],
+        "extends": [
+            "universe/node",
+            "plugin:md/recommended"
+        ],
+        "rules": {
+            "md/remark": [
+                "error",
+                {
+                    "plugins": [
+                        [
+                            "lint-maximum-line-length",
+                            false
+                        ]
+                    ]
+                }
+            ]
+        },
+        "overrides": [
+            {
+                "files": [
+                    "*.md"
+                ],
+                "parser": "markdown-eslint-parser",
+                "rules": {
+                    "prettier/prettier": [
+                        "error",
+                        {
+                            "parser": "markdown"
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "prettier": {
+        "singleQuote": true,
+        "trailingComma": "all",
+        "arrowParens": "avoid",
+        "semi": true,
+        "useTabs": false,
+        "tabWidth": 4,
+        "printWidth": 120
+    },
+    "lint-staged": {
+        "*.ts": "eslint --fix",
+        "*.{json,md}": "prettier --write"
+    }
+}
