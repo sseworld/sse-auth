@@ -1,0 +1,48 @@
+{
+  "name": "@sse-auth/twitter",
+  "version": "1.0.0",
+  "description": "React component for simple OAuth with Twitter",
+  "main": "index.js",
+  "scripts": {
+    "watch": "tsc --watch",
+    "prepublishOnly": "rm -rf ./dist && tsc",
+    "build": "rm -rf ./dist && tsc",
+    "prettify": "prettier --write './src/**/*.{js,jsx,ts,tsx,json,css,md}'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sseworld/sse-auth.git"
+  },
+  "author": "SSE World",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sseworld/sse-auth/issues"
+  },
+  "homepage": "https://github.com/sseworld/sse-auth#readme",
+  "devDependencies": {
+    "@types/crypto-js": "^4.2.2",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "css-loader": "^7.1.2",
+    "file-loader": "^6.2.0",
+    "prettier": "^3.3.2",
+    "react": "^18.3.1",
+    "sass": "^1.77.5",
+    "sass-loader": "^14.2.1",
+    "semantic-ui-css": "^2.5.0",
+    "semantic-ui-react": "^2.1.5",
+    "style-loader": "^4.0.0",
+    "typescript": "^5.4.5",
+    "url-loader": "^4.1.1"
+  },
+  "keywords": [
+    "react",
+    "twitter",
+    "login",
+    "auth",
+    "oauth"
+  ],
+  "dependencies": {
+    "crypto-js": "^4.2.0"
+  }
+}
