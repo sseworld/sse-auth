@@ -5,6 +5,7 @@ import { terser } from "rollup-plugin-terser";
 // import typescript from "rollup-plugin-typescript2";
 import typescript from "@rollup/plugin-typescript";
 import * as packageJson from "./package.json";
+import jsx from "acorn-jsx"
 
 export default {
   input: "src/index.ts",
@@ -20,12 +21,13 @@ export default {
       sourcemap: true,
     },
   ],
+  acornInjectPlugins: [jsx()],
   plugins: [
     peerDepsExternal(),
     resolve(),
     commonjs(),
     // typescript({ useTsconfigDeclarationDir: true, jsx: 'react-jsx' }),
-    typescript(),
+    typescript({ compilerOptions : { jsx: 'preserve' } }),
 
     // eslint-disable-next-line no-undef
     process.env.BUILD_MODE !== "dev" &&

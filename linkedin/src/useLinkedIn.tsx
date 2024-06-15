@@ -28,7 +28,7 @@ export function useLinkedIn({
   state = '',
   closePopupMessage = 'User closed the popup',
 }: useLinkedInType) {
-  const popupRef = React.useRef<Window>(null);
+  const popupRef = useRef<Window>(null);
   const popUpIntervalRef = useRef<number>(null);
 
   const receiveMessage = useCallback(
