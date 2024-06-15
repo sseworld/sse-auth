@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 
 import PopupWindow from "./PopupWindow";
 import { toQuery } from "./utils";
+import Button from "./Button"
 
 class GitHubLogin extends React.Component {
   static propTypes = {
@@ -70,7 +71,7 @@ class GitHubLogin extends React.Component {
       attrs.className = className;
     }
 
-    return <button {...attrs}>{children || buttonText}</button>;
+    return <Button className={className ? className : null} buttonText={buttonText ? buttonText : null} children={children ? children : null} />
   }
 }
 
