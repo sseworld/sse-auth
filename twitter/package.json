@@ -2,7 +2,8 @@
   "name": "@sse-auth/twitter",
   "version": "1.0.0",
   "description": "React component for simple OAuth with Twitter",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "index.d.ts",
   "scripts": {
     "watch": "tsc --watch",
     "prepublishOnly": "rm -rf ./dist && tsc",
