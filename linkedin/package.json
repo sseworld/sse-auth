@@ -21,7 +21,6 @@
     "clean": "rimraf build",
     "rbuild": "rollup -c",
     "tbuild": "tsc",
-    "prepublishOnly": "npm run build",
     "prettier": "prettier src --write"
   },
   "repository": {
