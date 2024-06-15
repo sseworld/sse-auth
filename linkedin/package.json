@@ -1,0 +1,54 @@
+{
+  "name": "@sse-auth/linketin",
+  "version": "1.0.0",
+  "description": "React component for Linked In Log In feature using OAuth 2.0",
+  "main": "build/index.js",
+  "module": "build/index.esm.js",
+  "files": [
+    "build",
+    "assets"
+  ],
+  "keywords": [
+    "react",
+    "linkedin",
+    "login",
+    "signin",
+    "oauth",
+    "oauth2",
+    "redirect"
+  ],
+  "scripts": {
+    "clean": "rimraf build",
+    "build": "rollup -c",
+    "prepublishOnly": "npm run build",
+    "prettier": "prettier src --write"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sseworld/sse-auth.git"
+  },
+  "author": "SSE World",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sseworld/sse-auth/issues"
+  },
+  "homepage": "https://github.com/sseworld/sse-auth#readme",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^26.0.1",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@typescript-eslint/eslint-plugin": "^7.13.0",
+    "@typescript-eslint/parser": "^7.13.0",
+    "prettier": "^3.3.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "rimraf": "^5.0.7",
+    "rollup": "^2.79.1",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "typescript": "^5.4.5"
+  }
+}

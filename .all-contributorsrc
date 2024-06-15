@@ -1,0 +1,18 @@
+{
+    "files": [
+        "README.md"
+    ],
+    "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+        "login": "ssewofficial",
+        "name": "SSE Official",
+        "avatar_url": "https://avatars.githubusercontent.com/u/114757626?v=4",
+        "profile": "ssewofficial.github.io",
+        "contributions": [
+        "code"
+      ]
+    }
+  ]
+}
