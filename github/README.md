@@ -3,7 +3,6 @@
 [![NPM Downloads](https://img.shields.io/npm/dm/%40sse-auth%2Fgithub?style=flat)](https://www.npmjs.com/package/@sse-auth/github)
 [![NPM Downloads](https://img.shields.io/npm/dt/%40sse-auth%2Fgithub?style=flat)](https://www.npmjs.com/package/@sse-auth/github)
 [![npm version](https://badge.fury.io/js/@sse-auth%2Fgithub.svg)](https://badge.fury.io/js/@sse-auth%2Fgithub)
-![CircleCI](https://circleci.com/gh/checkr/react-github-login.svg?style=shield&circle-token=493b950057f69e68ac8698a9ee189b2132a296e4)
 
 React component for [GitHub login](https://developer.github.com/v3/oauth/).
 
