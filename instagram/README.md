@@ -1,4 +1,7 @@
-# React Instagram Login
+# SSE Instagram Login
+[![NPM Downloads](https://img.shields.io/npm/dm/%40sse-auth%2Finstagram?style=flat)](https://www.npmjs.com/package/@sse-auth/instagram)
+[![NPM Downloads](https://img.shields.io/npm/dt/%40sse-auth%2Finstagram?style=flat)](https://www.npmjs.com/package/@sse-auth/instagram)
+[![npm version](https://badge.fury.io/js/@sse-auth%2Finstagram.svg)](https://badge.fury.io/js/@sse-auth%2Finstagram)
 
 > An Instagram oAUth Sign-in / Log-in Component for React
 
