@@ -1,8 +1,8 @@
+# @sse-auth/discord
+
 [![NPM Downloads](https://img.shields.io/npm/dm/%40sse-auth%2Fdiscord?style=flat)](https://www.npmjs.com/package/@sse-auth/discord)
 [![NPM Downloads](https://img.shields.io/npm/dt/%40sse-auth%2Fdiscord?style=flat)](https://www.npmjs.com/package/@sse-auth/discord)
 [![npm version](https://badge.fury.io/js/@sse-auth%2Fdiscord.svg)](https://badge.fury.io/js/@sse-auth%2Fdiscord)
-
-# @sse-auth/discord
 
 `@sse-auth/discord` is a lightweight and flexible React component for easy integration of "Sign in with Discord" functionality into your web applications. Empower your users to log in seamlessly using their Discord accounts.
 
