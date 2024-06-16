@@ -2,7 +2,10 @@
 
 > An Apple Log-in Component for React
 
-[![NPM](https://img.shields.io/npm/v/@sse-auth/apple.svg)](https://www.npmjs.com/package/@sse-auth/apple) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM Downloads](https://img.shields.io/npm/dm/%40sse-auth%2Fapple?style=flat)](https://www.npmjs.com/package/@sse-auth/apple)
+[![NPM Downloads](https://img.shields.io/npm/dt/%40sse-auth%2Fapple?style=flat)](https://www.npmjs.com/package/@sse-auth/apple)
+[![npm version](https://badge.fury.io/js/@sse-auth%2Fapple.svg)](https://badge.fury.io/js/@sse-auth%2Fapple)
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 <!-- See [@sse-auth/apple](https://sseworld.github.io/@sse-auth/apple/) for live demo. -->
 
