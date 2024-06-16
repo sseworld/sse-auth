@@ -1,3 +1,7 @@
+[![NPM Downloads](https://img.shields.io/npm/dm/%40sse-auth%2Fgoogle?style=flat)](https://www.npmjs.com/package/@sse-auth/github)
+[![NPM Downloads](https://img.shields.io/npm/dt/%40sse-auth%2Fgoogle?style=flat)](https://www.npmjs.com/package/@sse-auth/github)
+[![npm version](https://badge.fury.io/js/@sse-auth%2Fgoogle.svg)](https://badge.fury.io/js/@sse-auth%2Fgoogle)
+
 <!-- ```diff
 - This package is no longer maintained.
 ``` -->
