@@ -1,0 +1,32 @@
+{
+  "name": "@sse-auth/bitbucket",
+  "version": "1.0.0",
+  "description": "Bitbucket OAuth2 authentication strategy for Passport.",
+  "main": "./lib/passport-bitbucket",
+  "keywords": [
+    "passport",
+    "bitbucket",
+    "auth",
+    "authn",
+    "authentication",
+    "identity",
+    "sse",
+    "sseworld",
+    "sse-auth"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sseworld/sse-auth.git"
+  },
+  "author": "SSE World",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sseworld/sse-auth/issues"
+  },
+  "homepage": "https://github.com/sseworld/sse-auth#readme",
+  "dependencies": {
+    "passport-oauth2": "^1.8.0",
+    "pkginfo": "^0.4.1",
+    "util": "^0.12.5"
+  }
+}
