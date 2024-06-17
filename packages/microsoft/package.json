@@ -1,0 +1,78 @@
+{
+  "name": "@sse-auth/microsoft",
+  "version": "1.0.1",
+  "description": "React component for easy OAuth with Microsoft services on client side.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "watch": "tsc --watch",
+    "develop": "webpack serve --mode development",
+    "build": "tsc && webpack",
+    "lint-staged": "lint-staged",
+    "prettify": "prettier --write './src/**/*.{js,jsx,ts,tsx,json,css,md}'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sseworld/sse-auth.git"
+  },
+  "author": "SSE World",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sseworld/sse-auth/issues"
+  },
+  "homepage": "https://github.com/sseworld/sse-auth#readme",
+  "dependencies": {
+    "@azure/msal-browser": "^2.33.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.6.2",
+    "@babel/core": "^7.6.2",
+    "@babel/preset-env": "^7.6.2",
+    "@babel/preset-react": "^7.0.0",
+    "@microsoft/microsoft-graph-types": "^1.26.0",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^5.0.1",
+    "file-loader": "^6.0.0",
+    "gh-pages": "^3.0.0",
+    "html-webpack-plugin": "^5.3.1",
+    "husky": "^6.0.0",
+    "is-ci": "^3.0.0",
+    "lint-staged": "^11.0.0",
+    "prettier": "^2.0.5",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-scripts": "^4.0.0",
+    "sass": "^1.58.3",
+    "sass-loader": "^11.0.1",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^2.0.1",
+    "style-loader": "^2.0.0",
+    "typescript": "^4.1.2",
+    "url-loader": "^4.1.0",
+    "webpack": "^5.6.0",
+    "webpack-cli": "^4.2.0",
+    "webpack-dev-server": "^3.1.10"
+  },
+  "peerDependencies": {
+    "react": ">=16",
+    "react-dom": ">=16"
+  },
+  "lint-staged": {
+    "./src/**/*.{js,jsx,ts,tsx,json,css,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "keywords": [
+    "react",
+    "outlook",
+    "ms",
+    "microsoft",
+    "live",
+    "login",
+    "auth",
+    "oauth"
+  ]
+}
