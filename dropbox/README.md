@@ -2,7 +2,7 @@
 
 [![NPM Downloads](https://img.shields.io/npm/dm/%40sse-auth%2Fdropbox?style=flat)](https://www.npmjs.org/package/@sse-auth/dropbox)
 [![NPM Downloads](https://img.shields.io/npm/dm/%40sse-auth%2Fdropbox?style=flat)](https://www.npmjs.org/package/@sse-auth/dropbox)
-[![npm version](https://badge.fury.io/js/@sse-auth%2Fdropbox.svg)](https://badge.fury.io/js/@sse-auth/dropbox)
+[![npm version](https://badge.fury.io/js/@sse-auth%2Fdropbox.svg)](https://badge.fury.io/js/@sse-auth%2Fdropbox)
 
 The API is generated programmatically, based on [endpoints description JSON][api.json] fetched from [official docs][docs].
 
