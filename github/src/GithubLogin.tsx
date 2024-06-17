@@ -1,22 +1,22 @@
-import React from "react";
-import PropTypes from "prop-types";
-
+import { Component, ReactNode } from "react";
 import PopupWindow from "./PopupWindow";
 import { toQuery } from "./utils";
 
-class GitHubLogin extends React.Component {
-  static propTypes = {
-    buttonText: PropTypes.string,
-    children: PropTypes.node,
-    className: PropTypes.string,
-    clientId: PropTypes.string.isRequired,
-    onRequest: PropTypes.func,
-    onSuccess: PropTypes.func,
-    onFailure: PropTypes.func,
-    redirectUri: PropTypes.string,
-    scope: PropTypes.string,
-  };
+interface GitHubLoginProps {
+  buttonText?: string;
+  children?: ReactNode;
+  className?: string;
+  clientId: string;
+  onRequest?: () => void;
+  onSuccess?: (data: any) => void;
+  onFailure?: (error: Error) => void;
+  redirectUri: string;
+  scope: string;
+}
 
+interface GitHubLoginState {}
+
+class GitHubLogin extends Component<GitHubLoginProps, GitHubLoginState> {
   static defaultProps = {
     buttonText: "Sign in with GitHub",
     redirectUri: "",
@@ -25,6 +25,8 @@ class GitHubLogin extends React.Component {
     onSuccess: () => {},
     onFailure: () => {},
   };
+
+  popup: any;
 
   onBtnClick = () => {
     const { clientId, scope, redirectUri } = this.props;
@@ -41,30 +43,36 @@ class GitHubLogin extends React.Component {
 
     this.onRequest();
     popup.then(
-      (data) => this.onSuccess(data),
-      (error) => this.onFailure(error),
+      (data: any) => this.onSuccess(data),
+      (error: Error) => this.onFailure(error),
     );
   };
 
   onRequest = () => {
-    this.props.onRequest();
+    if (this.props.onRequest) {
+      this.props.onRequest();
+    }
   };
 
-  onSuccess = (data) => {
+  onSuccess = (data: any) => {
     if (!data.code) {
       return this.onFailure(new Error("'code' not found"));
     }
 
-    this.props.onSuccess(data);
+    if (this.props.onSuccess) {
+      this.props.onSuccess(data);
+    }
   };
 
-  onFailure = (error) => {
-    this.props.onFailure(error);
+  onFailure = (error: Error) => {
+    if (this.props.onFailure) {
+      this.props.onFailure(error);
+    }
   };
 
   render() {
     const { className, buttonText, children } = this.props;
-    const attrs = { onClick: this.onBtnClick };
+    const attrs: any = { onClick: this.onBtnClick };
 
     if (className) {
       attrs.className = className;
