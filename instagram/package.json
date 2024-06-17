@@ -1,0 +1,61 @@
+{
+  "name": "@sse-auth/instagram",
+  "version": "1.0.0",
+  "description": "An Instagram Login Component for React",
+  "main": "dist/instagram-login.js",
+  "scripts": {
+    "bundle": "rollup -c rollup.config.mjs"
+  },
+  "pre-commit": [
+    "test",
+    "lint",
+    "bundle"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sseworld/sse-auth.git"
+  },
+  "keywords": [
+    "react",
+    "reactjs",
+    "react-component",
+    "instagram-login",
+    "instagram-oAuth2",
+    "instagram-oAuth",
+    "sse-auth",
+    "sse",
+    "sseworld"
+  ],
+  "author": "SSE World",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sseworld/sse-auth/issues"
+  },
+  "homepage": "https://github.com/sseworld/sse-auth#readme",
+  "devDependencies": {
+    "@babel/preset-env": "^7.24.7",
+    "@babel/preset-react": "^7.24.7",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-commonjs": "^26.0.1",
+    "@rollup/plugin-terser": "^0.4.4",
+    "babel-preset-es2015": "^6.24.1",
+    "eslint-config-ag": "^4.0.5",
+    "jquery": "^3.7.1",
+    "jsdom": "^24.1.0",
+    "mocha": "^10.4.0",
+    "prop-types": "^15.8.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-fontawesome": "^1.7.1",
+    "rollup": "^4.18.0"
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "react"
+    ]
+  },
+  "directories": {
+    "test": "test"
+  }
+}
