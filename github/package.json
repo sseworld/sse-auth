@@ -1,6 +1,6 @@
 {
   "name": "@sse-auth/github",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "A React Component for GitHub Login",
   "main": "dist/GitHubLogin.js",
   "types": "dist/GitHubLogin.d.ts",
