@@ -1,0 +1,48 @@
+{
+  "name": "@sse-auth/github",
+  "version": "2.0.0",
+  "description": "A React Component for GitHub Login",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "keywords": [
+    "react",
+    "reactjs",
+    "react-component",
+    "github-login",
+    "react-github-login"
+  ],
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sseworld/sse-auth.git"
+  },
+  "author": "SSE World",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sseworld/sse-auth/issues"
+  },
+  "homepage": "https://github.com/sseworld/sse-auth#readme",
+  "devDependencies": {
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "rimraf": "^5.0.7",
+    "tslib": "^2.6.3",
+    "typescript": "^5.4.5"
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "react",
+      "stage-0"
+    ]
+  },
+  "dependencies": {
+    "axios": "^1.7.2"
+  }
+}
