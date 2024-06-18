@@ -1,5 +1,5 @@
 import React from "react";
-import { GitHubLogin } from "../../../packages/github/src/index";
+import { GitHubLogin } from "../../../github/dist/index";
 
 function App() {
   const onSuccess = (response) => console.log(response);
@@ -9,7 +9,14 @@ function App() {
     <>
       <GitHubLogin
         clientId="Ov23liiLLI41odEdI1pl"
-        onSuccess={onSuccess}
+        clientSecret="cf306a48f33d241e3a77ed3ff1c45a67f7af59bd"
+        onSuccess={(userDetails) => {
+          console.log("User details:", userDetails);
+          const username = userDetails.login;
+          const email = userDetails.email;
+          console.log("Username:", username);
+          console.log("Email:", email);
+        }}
         onFailure={onFailure}
       />
     </>
