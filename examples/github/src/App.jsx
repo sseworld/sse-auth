@@ -1,5 +1,6 @@
 import React from "react";
-import { GitHubLogin } from "../../../github/dist/index";
+// import { GitHubLogin } from "../../../github/dist/index";
+import { GitHubLogin } from "@sse-auth/github/src/GithubLogin";
 
 function App() {
   const onSuccess = (response) => console.log(response);
