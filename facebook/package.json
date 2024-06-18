@@ -28,8 +28,12 @@
   "devDependencies": {
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
+    "css-loader": "^7.1.2",
     "react": "^15.7.0",
     "react-dom": "^15.7.0",
+    "sass": "^1.77.6",
+    "sass-loader": "^14.2.1",
+    "style-loader": "^4.0.0",
     "tslib": "^2.6.3",
     "typescript": "^5.4.5"
   },
